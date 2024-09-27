@@ -1,14 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import AppRouter from './routes/Routes';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <h1 className="text-3xl font-bold underline text-red-400">
-      Hello world!
-    </h1>
+    <div>
+      <AppRouter />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
